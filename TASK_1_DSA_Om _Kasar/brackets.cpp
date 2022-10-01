@@ -13,33 +13,33 @@ bool Pair(char opening,char closing)
 	else if(opening == '[' && closing == ']') return true;
 	return false;
 }
-bool BalancedParantheses(string exp)
+bool BalancedParanthesis(string str1)
 {
-	stack<char>  S;
-	for(int i =0;i<exp.length();i++)
+	stack<char>  S1;
+	for(int i =0;i<str1.length();i++)
 	{
-		if(exp[i] == '(' || exp[i] == '{' || exp[i] == '[')
-			S.push(exp[i]);
-		else if(exp[i] == ')' || exp[i] == '}' || exp[i] == ']')
+		if(str1[i] == '(' || str1[i] == '{' || str1[i] == '[')
+			S.push(str1[i]);
+		else if(str1[i] == ')' || str1[i] == '}' || str1[i] == ']')
 		{
-			if(S.empty() || !Pair(S.top(),exp[i]))
+			if(S.empty() || !Pair(S.top(),str1[i]))
 				return false;
 			else
 				S.pop();
 		}
 	}
-	return S.empty() ? true:false;
+	return S1.empty() ? true:false;
 }
 
 int main()
 {
 	
 	
-	string expression;
+	string str;
 	cout<<"Enter an expression:  "; 
-	cin>>expression;
+	cin>>str;
 	
-	if(BalancedParantheses(expression))
+	if(BalancedParantheses(str))
 		cout<<"Parantheses are Balanced\n";
 	
 	else
