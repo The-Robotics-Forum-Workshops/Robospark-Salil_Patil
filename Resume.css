@@ -1,0 +1,74 @@
+body{
+    margin:0;
+}
+.header {
+    background-color:rgb(167, 236, 236);
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    width: 100px;
+    margin-right: 20px;
+}
+header{
+    background-color:aqua;
+}
+
+#box {
+    background-color: rgb(255, 205, 205);
+    display: flex;
+    width:fit-content;
+    height: 80px;
+  }
+  
+  .item {
+    background: rgb(109, 252, 173);
+    width: 413.5px;
+
+  }
+
+  #box1 {
+    background-color: black;
+    display: flex;
+    width: 800px;
+  }
+  
+  .item1 {
+    background: rgb(182, 185, 184);
+    width: 1000px;
+    height: 80px;
+    margin: 0 1px;
+  }
+.sectiontitle{
+    background-color: black;
+    width: 800px;
+    
+    color: beige;
+}
+
+#box4 {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 440px;
+  }
+  
+  .item4 {
+    background: rgb(218, 168, 201);
+    width: 1000px;
+    height: 170px;
+    margin: 0 1px;
+  }
+
+  #box6 {
+    display: flex;
+    width:fit-content;
+  }
+  
+  .item6 {
+    background: rgb(179, 219, 219);
+    width: 413.5px;
+    height: 100px;
+
+  }
